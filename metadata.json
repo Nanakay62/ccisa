@@ -1,0 +1,6 @@
+{
+  "name": "CCCI Study Assistant",
+  "description": "Library and AI Assistant for the teachings of Dr. Derrick Anane-Dankyi.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

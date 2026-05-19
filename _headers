@@ -1,0 +1,19 @@
+/* Netlify Headers for PGlite and Local AI */
+/* COOP and COEP are sometimes required for SharedArrayBuffer / WebWorkers */
+/* PGlite often works in a single thread if these aren't set, but performance improves with them. */
+
+/* Site-wide headers */
+/*
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin"
+    Cross-Origin-Embedder-Policy = "require-corp"
+*/
+
+/* Manifest and JSON files */
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
